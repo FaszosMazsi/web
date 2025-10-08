@@ -1,6 +1,6 @@
 function getFileInfo(params: { tag: string }) {
   const url = `/files/${params.tag}`;
-   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://weber3-ebpk3ymsr-mazsolas-projects.vercel.app/';
+   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://weber3.vercel.app/';
   return fetch(url)
     .then((response) => response.json())
     .then((data) => {
